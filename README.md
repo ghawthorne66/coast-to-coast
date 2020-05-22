@@ -1,3 +1,3 @@
-# coast-to-coast
+# greg-landing-pages
 
-Greg Project for https://www.coast2coastrefrigeration.com/
+Landing Pages for Greg
