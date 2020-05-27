@@ -1,13 +1,13 @@
 import React from 'react'
-import BlankTemplate from '../components/common/layout/blank-temp'
+import Layout from '../components/common/layout'
 import Home from '../components/home'
 import SEO from '../components/common/seo'
 
 const IndexPage = () => (
-  <BlankTemplate>
+  <Layout>
     <SEO title="San Diego Refrigeration &amp; A/C Repair" />
     <Home />
-  </BlankTemplate>
+  </Layout>
 )
 
 export default IndexPage
