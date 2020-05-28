@@ -4,13 +4,13 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Montserrat'
+    font-family: 'Overpass'
   }
 `
 
 const theme = {
   colors: {
-    primary: '#188bf6',
+    primary: '#3f9fd4',
     dark: '#000000',
     light: '#ffffff',
     lightGray: '#f6f6f6',

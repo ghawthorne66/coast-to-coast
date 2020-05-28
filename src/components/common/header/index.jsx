@@ -6,11 +6,19 @@ import {
 } from 'react-bootstrap'
 import styled from 'styled-components'
 import Image from '../image'
-import Menu from './menu'
+import menu from './menu'
 
 const LogoCont = styled.div`
   width: 300px;
 
+`
+const Cta = styled.div`
+  & a {
+    background: linear-gradient(90deg, rgb(1, 129, 199) 0%, rgb(110, 204, 255) 100%);
+    border-radius: 50px;
+    padding: 10px 2px;
+    color: #fff;
+  }
 `
 
 const Header = () => (
@@ -29,21 +37,26 @@ const Header = () => (
             </Navbar.Brand>
 
             <div className="site-nav-cont w-100 d-md-flex flex-md-column align-items-md-end text-center">
-              <div className="cta">
-                <a href="tel:3213513869">(321) 351-3869</a>
-              </div>
+              <Cta>
+                <a href="tel:3213513869">Make Appointment</a>
+              </Cta>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="justify-content-end">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">Link</Nav.Link>
-                  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                  </NavDropdown>
+                  {menu.map(({
+                    name, url, children, childs,
+                  }) => (
+                    <>
+                      {children
+                        ? (
+                          <NavDropdown title={name}>
+                            {childs.map((child) => <NavDropdown.Item href={child.url}>{child.name}</NavDropdown.Item>)}
+                          </NavDropdown>
+                        )
+                        : <Nav.Link href={url}>{name}</Nav.Link>}
+                    </>
+                  ))}
+
                 </Nav>
               </Navbar.Collapse>
 

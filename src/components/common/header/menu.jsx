@@ -1,25 +1,41 @@
-import React from 'react'
+export const menu = [
+  {
+    id: 'home', name: 'Home', url: '/', children: false,
+  },
+  {
+    id: 'services',
+    name: 'Services',
+    url: '/services',
+    children: true,
+    childs: [
+      { name: 'Residential Refrigeration', url: '/services/residential-refrigeration' },
+      { name: 'Commercial Refrigeration', url: '/services/commercial-refrigeration' },
+      { name: 'Marine Refrigeration', url: '/services/marine-refrigeration' },
+      { name: 'All Services', url: '/services' },
+    ],
+  },
+  {
+    id: 'service-area',
+    name: 'Service Area',
+    url: '/service-area',
+    children: false,
+  },
+  {
+    id: 'testimonials', name: 'Testimonials', url: '/testimonials', children: false,
+  },
+  {
+    id: 'news', name: 'News', url: '/news', children: false,
+  },
+  {
+    id: 'contact',
+    name: 'Contact',
+    url: '/contact',
+    children: true,
+    childs: [
+      { name: 'Contact', url: '/contact' },
+      { name: 'Careers', url: '/careers' },
+    ],
+  },
+]
 
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
-
-const Menu = () => (
-  <Navbar bg="light" expand="md">
-    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">Link</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-)
-
-export default Menu
+export default menu
