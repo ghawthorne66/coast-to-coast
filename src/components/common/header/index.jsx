@@ -1,5 +1,4 @@
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 import {
   Row, Col, Container, Navbar, Nav, NavDropdown,
@@ -10,7 +9,6 @@ import menu from './menu'
 
 const LogoCont = styled.div`
   width: 300px;
-
 `
 const Cta = styled.div`
 
@@ -33,12 +31,27 @@ const Cta = styled.div`
   }
 `
 
+const NavCont = styled.div`
+  & .nav-link{
+    color: #666 !important;
+  }
+  
+  & .nav-link.active{
+    color: ${({ theme }) => theme.colors.primary} !important;
+  }
+
+  & {
+    font-size: 16px;
+    font-weight: 400;
+  }
+`
+
 const Header = () => (
   <header id="site-header">
     <Container className="my-3">
       <Row>
         <Col>
-          <Navbar bg="light" expand="md">
+          <Navbar expand="md">
             <Navbar.Brand href="#home">
               <LogoCont className="logo-cont">
                 <Link to="/">
@@ -51,7 +64,7 @@ const Header = () => (
               <Cta>
                 <a href="tel:3213513869">MAKE APPOINTMENT</a>
               </Cta>
-              <div className="navbar-cont p-3">
+              <NavCont className="navbar-cont p-3">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="justify-content-end">
@@ -65,13 +78,13 @@ const Header = () => (
                               {childs.map((child) => <NavDropdown.Item href={child.url}>{child.name}</NavDropdown.Item>)}
                             </NavDropdown>
                           )
-                          : <Nav.Link href={url}>{name}</Nav.Link>}
+                          : <Nav.Link as={Link} activeClassName="active" to={url}>{name}</Nav.Link>}
                       </>
                     ))}
 
                   </Nav>
                 </Navbar.Collapse>
-              </div>
+              </NavCont>
             </div>
           </Navbar>
         </Col>

@@ -1,39 +1,39 @@
 export const menu = [
   {
-    id: 'home', name: 'Home', url: '/', children: false,
+    id: 'home', name: 'HOME', url: '/', children: false,
   },
   {
     id: 'services',
-    name: 'Services',
+    name: 'SERVICES',
     url: '/services',
     children: true,
     childs: [
-      { name: 'Residential Refrigeration', url: '/services/residential-refrigeration' },
-      { name: 'Commercial Refrigeration', url: '/services/commercial-refrigeration' },
-      { name: 'Marine Refrigeration', url: '/services/marine-refrigeration' },
-      { name: 'All Services', url: '/services' },
+      { name: 'RESIDENTIAL REFRIGERATION', url: '/services/residential-refrigeration' },
+      { name: 'COMMERCIAL REFRIGERATION', url: '/services/commercial-refrigeration' },
+      { name: 'MARINE REFRIGERATION', url: '/services/marine-refrigeration' },
+      { name: 'ALL SERVICES', url: '/services' },
     ],
   },
   {
     id: 'service-area',
-    name: 'Service Area',
+    name: 'SERVICE AREA',
     url: '/service-area',
     children: false,
   },
   {
-    id: 'testimonials', name: 'Testimonials', url: '/testimonials', children: false,
+    id: 'testimonials', name: 'TESTIMONIALS', url: '/testimonials', children: false,
   },
   {
-    id: 'news', name: 'News', url: '/news', children: false,
+    id: 'news', name: 'NEWS', url: '/news', children: false,
   },
   {
     id: 'contact',
-    name: 'Contact',
+    name: 'CONTACT',
     url: '/contact',
     children: true,
     childs: [
-      { name: 'Contact', url: '/contact' },
-      { name: 'Careers', url: '/careers' },
+      { name: 'CONTACT', url: '/contact' },
+      { name: 'CAREERS', url: '/careers' },
     ],
   },
 ]
