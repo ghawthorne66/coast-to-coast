@@ -13,11 +13,23 @@ const LogoCont = styled.div`
 
 `
 const Cta = styled.div`
-  & a {
+
+  & {
     background: linear-gradient(90deg, rgb(1, 129, 199) 0%, rgb(110, 204, 255) 100%);
     border-radius: 50px;
-    padding: 10px 2px;
+    padding: 12px 32px;
+    padding-bottom: 10px;
+    line-height: 16px;
+  }
+
+  & a {
     color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  & a:hover{
+    text-decoration: none;
   }
 `
 
@@ -33,37 +45,36 @@ const Header = () => (
                   <Image imgName="logo.png" />
                 </Link>
               </LogoCont>
-
             </Navbar.Brand>
 
-            <div className="site-nav-cont w-100 d-md-flex flex-md-column align-items-md-end text-center">
+            <div className="site-nav-cont w-100 d-md-flex  flex-md-column flex-md-grow-1 align-items-md-end justify-content-md-between text-center">
               <Cta>
-                <a href="tel:3213513869">Make Appointment</a>
+                <a href="tel:3213513869">MAKE APPOINTMENT</a>
               </Cta>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="justify-content-end">
-                  {menu.map(({
-                    name, url, children, childs,
-                  }) => (
-                    <>
-                      {children
-                        ? (
-                          <NavDropdown title={name}>
-                            {childs.map((child) => <NavDropdown.Item href={child.url}>{child.name}</NavDropdown.Item>)}
-                          </NavDropdown>
-                        )
-                        : <Nav.Link href={url}>{name}</Nav.Link>}
-                    </>
-                  ))}
+              <div className="navbar-cont p-3">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav className="justify-content-end">
+                    {menu.map(({
+                      name, url, children, childs,
+                    }) => (
+                      <>
+                        {children
+                          ? (
+                            <NavDropdown title={name}>
+                              {childs.map((child) => <NavDropdown.Item href={child.url}>{child.name}</NavDropdown.Item>)}
+                            </NavDropdown>
+                          )
+                          : <Nav.Link href={url}>{name}</Nav.Link>}
+                      </>
+                    ))}
 
-                </Nav>
-              </Navbar.Collapse>
-
+                  </Nav>
+                </Navbar.Collapse>
+              </div>
             </div>
           </Navbar>
         </Col>
-
       </Row>
     </Container>
   </header>

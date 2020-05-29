@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Overpass'
   }
+
 `
 
 const theme = {
