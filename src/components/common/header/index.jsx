@@ -1,10 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { Link } from 'gatsby'
+import { useLocation } from '@reach/router'
 import React from 'react'
 import {
   Row, Col, Container, Navbar, Nav, NavDropdown,
 } from 'react-bootstrap'
 import styled from 'styled-components'
-import { useLocation } from '@reach/router'
+
 import Image from '../image'
 import menu from './menu'
 

@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: '#3f9fd4',
+    primary: '#2ea3f2',
     dark: '#000000',
     light: '#ffffff',
     lightGray: '#f6f6f6',

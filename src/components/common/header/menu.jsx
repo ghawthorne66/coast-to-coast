@@ -1,4 +1,4 @@
-export const menu = [
+const menu = [
   {
     id: 'home', name: 'HOME', url: '/', children: false,
   },
