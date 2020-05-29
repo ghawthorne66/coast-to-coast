@@ -51,15 +51,12 @@ const NavCont = styled.div`
 
 const Header = () => {
   const location = useLocation()
-  console.log('LOCATIONS: ', location)
 
   return (
     <header id="site-header">
       <Container className="my-3">
         <Row>
           <Col>
-            {Location}
-            {/* <h3>{pathname}</h3> */}
             <Navbar expand="md">
               <Navbar.Brand href="#home">
                 <LogoCont className="logo-cont">

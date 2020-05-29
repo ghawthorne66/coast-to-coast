@@ -6,5 +6,7 @@
 
 // You can delete this file if you're not using it
 
-import './node_modules/bootstrap/dist/css/bootstrap.min.css'
-import './node_modules/font-awesome/css/font-awesome.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.min.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
