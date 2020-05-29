@@ -4,6 +4,7 @@ import {
   Row, Col, Container, Navbar, Nav, NavDropdown,
 } from 'react-bootstrap'
 import styled from 'styled-components'
+import { useLocation } from '@reach/router'
 import Image from '../image'
 import menu from './menu'
 
@@ -46,51 +47,57 @@ const NavCont = styled.div`
   }
 `
 
-const Header = () => (
-  <header id="site-header">
-    <Container className="my-3">
-      <Row>
-        <Col>
-          <Navbar expand="md">
-            <Navbar.Brand href="#home">
-              <LogoCont className="logo-cont">
-                <Link to="/">
-                  <Image imgName="logo.png" />
-                </Link>
-              </LogoCont>
-            </Navbar.Brand>
+const Header = () => {
+  const location = useLocation()
+  console.log('LOCATIONS: ', location)
 
-            <div className="site-nav-cont w-100 d-md-flex  flex-md-column flex-md-grow-1 align-items-md-end justify-content-md-between text-center">
-              <Cta>
-                <a href="tel:3213513869">MAKE APPOINTMENT</a>
-              </Cta>
-              <NavCont className="navbar-cont p-3">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="justify-content-end">
-                    {menu.map(({
-                      name, url, children, childs,
-                    }) => (
-                      <>
-                        {children
-                          ? (
-                            <NavDropdown title={name}>
-                              {childs.map((child) => <NavDropdown.Item href={child.url}>{child.name}</NavDropdown.Item>)}
-                            </NavDropdown>
-                          )
-                          : <Nav.Link as={Link} activeClassName="active" to={url}>{name}</Nav.Link>}
-                      </>
-                    ))}
+  return (
+    <header id="site-header">
+      <Container className="my-3">
+        <Row>
+          <Col>
+            {Location}
+            {/* <h3>{pathname}</h3> */}
+            <Navbar expand="md">
+              <Navbar.Brand href="#home">
+                <LogoCont className="logo-cont">
+                  <Link to="/">
+                    <Image imgName="logo.png" />
+                  </Link>
+                </LogoCont>
+              </Navbar.Brand>
 
-                  </Nav>
-                </Navbar.Collapse>
-              </NavCont>
-            </div>
-          </Navbar>
-        </Col>
-      </Row>
-    </Container>
-  </header>
-)
+              <div className="site-nav-cont w-100 d-md-flex  flex-md-column flex-md-grow-1 align-items-md-end justify-content-md-between text-center">
+                <Cta>
+                  <a href="tel:3213513869">MAKE APPOINTMENT</a>
+                </Cta>
+                <NavCont className="navbar-cont p-3">
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="justify-content-end">
+                      {menu.map(({
+                        name, url, children, childs,
+                      }) => (
+                        <>
+                          {children
+                            ? (
+                              <NavDropdown active={location.pathname.includes(url)} title={name} as={Link} activeClassName="active">
+                                {childs.map((child) => <NavDropdown.Item as={Link} activeClassName="active" to={child.url}>{child.name}</NavDropdown.Item>)}
+                              </NavDropdown>
+                            )
+                            : <Nav.Link as={Link} activeClassName="active" to={url}>{name}</Nav.Link>}
+                        </>
+                      ))}
 
+                    </Nav>
+                  </Navbar.Collapse>
+                </NavCont>
+              </div>
+            </Navbar>
+          </Col>
+        </Row>
+      </Container>
+    </header>
+  )
+}
 export default Header
