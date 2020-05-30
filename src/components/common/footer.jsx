@@ -71,7 +71,7 @@ const Footer = () => (
         </Col>
       </Row>
       <Row className="">
-        <Col className="d-flex justify-content-between border-top border-light p-2">
+        <Col className="d-md-flex justify-content-md-between border-top border-light p-2">
 
           <p>
             Copyright © 2020 Coast 2 Coast Refrigeration |

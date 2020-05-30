@@ -42,7 +42,7 @@ const WhoWeAre = () => (
   <StyledWhoWeAre>
     <Container className="my-5">
       <Row>
-        <Col sm="8">
+        <Col sm="8" className="order-2 order-sm-1">
           <h2 className="pb-3">Who We Are </h2>
           <p>In January 2019, Raymond Barnes established Coast 2 Coast Refrigeration with a view to be able to service San Diego Bay area customer base, from the simplest refrigeration or A/C system, and to include not only business but the boating world as well. Coast 2 Coast’s philosophy is about ensuring the solution you get is tailored to suit the size, space and need you may have. Raymond has made sure to include all insurances, bond and other licenses, and can provide upon request.</p>
 
@@ -51,7 +51,7 @@ const WhoWeAre = () => (
             <Link to="/contact" className="btn btn-primary apnt-btn mx-2">SCHEDULE APPOITNTMENT</Link>
           </div>
         </Col>
-        <Col sm="4">
+        <Col sm="4" className="order-1 order-sm-2">
 
           <div className="img-cont">
             <Image imgName="about-coast.jpg" />
