@@ -1,11 +1,11 @@
 import React from 'react'
-import BlankTemplate from '../components/common/layout/blank-temp'
+import Layout from '../components/common/layout'
 import ThankYou from '../components/thank-you'
 
 const ThankYouPage = () => (
-  <BlankTemplate>
+  <Layout>
     <ThankYou />
-  </BlankTemplate>
+  </Layout>
 )
 
 export default ThankYouPage

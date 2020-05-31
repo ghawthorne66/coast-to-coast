@@ -69,7 +69,7 @@ const ContactForm = () => (
                   ? 'form-control is-invalid'
                   : 'form-control'
               }
-              placeholder="Your Email"
+              placeholder="Email"
             />
             {errors.email && touched.email ? (
               <div className="invalid-feedback">{errors.email}</div>
@@ -101,7 +101,7 @@ const ContactForm = () => (
                       ? 'form-control is-invalid'
                       : 'form-control'
                   }
-              placeholder="Please tell us more about the website that you need"
+              placeholder="Your message"
               rows="4"
             />
             {errors.message && touched.message ? (
