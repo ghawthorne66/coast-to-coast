@@ -80,7 +80,7 @@ const Header = () => {
                         <React.Fragment key={id}>
                           {children
                             ? (
-                              <NavDropdown key={id} active={location.pathname.includes(url) || } title={name} as={Link}>
+                              <NavDropdown key={id} active={location.pathname.includes(url)} title={name} as={Link}>
                                 {childs.map((child) => <NavDropdown.Item key={`${child.name}-${id}`} as={Link} activeClassName="active" to={child.url}>{child.name}</NavDropdown.Item>)}
                               </NavDropdown>
                             )

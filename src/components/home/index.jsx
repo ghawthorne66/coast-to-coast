@@ -3,6 +3,7 @@ import Hero from './hero'
 import WhoWeAre from './who-we-are'
 import OurServices from './our-services'
 import Partners from './partners'
+import Testimonials from './testmonials'
 
 const Home = () => (
   <>
@@ -10,6 +11,7 @@ const Home = () => (
     <WhoWeAre />
     <OurServices />
     <Partners />
+    <Testimonials />
   </>
 )
 export default Home
