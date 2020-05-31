@@ -1,23 +1,23 @@
 image: node:latest
 
 stages:
-  - build
+  # - build
   - deploy
 
 workflow:
   rules:
     - if: $CI_COMMIT_BRANCH == "dev"
 
-build: 
-  stage: build
-  script:
-  - echo "Building "
-  - npm i
-  - npm run build
-  - echo "Building Web App is successful"
-  artifacts:
-    paths:
-      - public/
+# build: 
+#   stage: build
+#   script:
+#   - echo "Building "
+#   - npm i
+#   - npm run build
+#   - echo "Building Web App is successful"
+#   artifacts:
+#     paths:
+#       - public/
 
 
 deploy: 
@@ -25,5 +25,5 @@ deploy:
   script:
   - echo "Deploying "
   - npm i -g netlify-cli
-  - netlify deploy -d public --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+  - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
   - echo "Deploying Web App is successful"
