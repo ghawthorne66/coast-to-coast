@@ -27,7 +27,7 @@ const menu = [
     id: 'news', name: 'NEWS', url: '/news', children: false,
   },
   {
-    id: 'contact',
+    id: 'contact-main',
     name: 'CONTACT',
     url: '/contact',
     children: true,

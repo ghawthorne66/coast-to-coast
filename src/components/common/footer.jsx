@@ -49,20 +49,20 @@ const Footer = () => (
           <h3>Navigation</h3>
           <ul className="nav-links">
             {menu.map(({
-              name, url, children, childs,
+              name, url, children, childs, id,
             }) => (
-              <>
+              <React.Fragment key={id}>
                 {children
                   ? (
                     <li>
                       <Link to={url}>{name}</Link>
                       <ul>
-                        {childs.map((child) => <li><Link to={child.url}>{child.name}</Link></li>)}
+                        {childs.map((child) => <li key={`${id}-${child.name}`}><Link to={child.url}>{child.name}</Link></li>)}
                       </ul>
                     </li>
                   )
                   : <li><Link to={url}>{name}</Link></li>}
-              </>
+              </React.Fragment>
             ))}
           </ul>
         </Col>

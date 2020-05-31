@@ -60,7 +60,7 @@ const StyledWhoWeAre = styled.section`
     margin: 20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     & .service-cont{
       margin-top: 10px !important;
     }
@@ -76,7 +76,7 @@ const WhoWeAre = () => (
         </Col>
       </Row>
       <Row className="equal">
-        <Col md="4" className="service-cont">
+        <Col lg="4" className="service-cont">
           <div className="inner">
             <div className="icon">
               <i className="fa fa-home" aria-hidden="true" />
@@ -97,7 +97,7 @@ const WhoWeAre = () => (
           </div>
 
         </Col>
-        <Col md="4" className="service-cont">
+        <Col lg="4" className="service-cont">
           <div className="inner">
             <div className="icon">
               <i className="fa fa-building" aria-hidden="true" />
@@ -118,7 +118,7 @@ const WhoWeAre = () => (
             </div>
           </div>
         </Col>
-        <Col md="4" className="service-cont">
+        <Col lg="4" className="service-cont">
           <div className="inner">
             <div className="icon">
               <i className="fa fa-anchor" aria-hidden="true" />

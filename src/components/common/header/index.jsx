@@ -11,7 +11,9 @@ import Image from '../image'
 import menu from './menu'
 
 const LogoCont = styled.div`
-  width: 300px;
+  & {
+    width: 300px;
+  }
 `
 const Cta = styled.div`
 
@@ -58,11 +60,9 @@ const Header = () => {
         <Row>
           <Col>
             <Navbar expand="md">
-              <Navbar.Brand href="#home">
-                <LogoCont className="logo-cont">
-                  <Link to="/">
-                    <Image imgName="logo.png" />
-                  </Link>
+              <Navbar.Brand as={Link} to="/">
+                <LogoCont>
+                  <Image imgName="logo.png" />
                 </LogoCont>
               </Navbar.Brand>
 
@@ -75,17 +75,17 @@ const Header = () => {
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-end">
                       {menu.map(({
-                        name, url, children, childs,
+                        name, url, children, childs, id,
                       }) => (
-                        <>
+                        <React.Fragment key={id}>
                           {children
                             ? (
-                              <NavDropdown active={location.pathname.includes(url)} title={name} as={Link} activeClassName="active">
-                                {childs.map((child) => <NavDropdown.Item as={Link} activeClassName="active" to={child.url}>{child.name}</NavDropdown.Item>)}
+                              <NavDropdown key={id} active={location.pathname.includes(url) || } title={name} as={Link}>
+                                {childs.map((child) => <NavDropdown.Item key={`${child.name}-${id}`} as={Link} activeClassName="active" to={child.url}>{child.name}</NavDropdown.Item>)}
                               </NavDropdown>
                             )
-                            : <Nav.Link as={Link} activeClassName="active" to={url}>{name}</Nav.Link>}
-                        </>
+                            : <Nav.Link key={id} as={Link} activeClassName="active" to={url}>{name}</Nav.Link>}
+                        </React.Fragment>
                       ))}
 
                     </Nav>
