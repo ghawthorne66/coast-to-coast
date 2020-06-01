@@ -1,14 +1,13 @@
 import React from 'react'
 import {
-  Row, Col, Container, Button,
+  Container,
 } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const StyledPageHeader = styled.section`
   background: ${({ theme }) => theme.colors.primary};
-  height:200px;
+  height:250px;
   align-items: center;
-  justify-content:center;
   display:flex;
   
 
@@ -17,10 +16,11 @@ const StyledPageHeader = styled.section`
     color: ${({ theme }) => theme.colors.light};
     font-weight: bold;
     text-align: left;
-    font-size: 36px;
+    font-size: 48px;
   }
 `
 
+// eslint-disable-next-line react/prop-types
 const PageHeader = ({ title }) => (
   <StyledPageHeader>
     <Container>
