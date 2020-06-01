@@ -3,13 +3,7 @@ import {
   Container, Row, Col,
 } from 'react-bootstrap'
 import styled from 'styled-components'
-import Aldi from '../../images/aldi.png'
-import Jambajuice from '../../images/jambajuice_web.png'
-import Pieology from '../../images/Pieology.png'
-import RedRobin from '../../images/redrobin_web.png'
-import Tocaya from '../../images/Tocaya.png'
 import Image from '../common/image'
-import Jack from '../../images/jack.png'
 
 const StyledOurClients = styled.section`
 & h1{
@@ -24,29 +18,29 @@ const StyledImage = styled.img`
 const OurClients = () => (
   <StyledOurClients className="p-0">
     <Container>
-      <Row className="text-center">
+      <Row className="p-3 p-md-5">
         <Col xs="12">
           <h1>
             OUR CLIENTS
           </h1>
         </Col>
-        <Col md="2">
-          <Image src="aldi.png" />
+        <Col className="text-center" xs="2">
+          <Image imgName="aldi.png" />
         </Col>
-        <Col md="2">
-          <StyledImage src={Jambajuice} height={170} width={170} />
+        <Col className="text-center" xs="2">
+          <Image imgName="jambajuice_web.png" />
         </Col>
-        <Col md="2">
-          <StyledImage src={Pieology} height={170} width={170} />
+        <Col className="text-center" xs="2">
+          <Image imgName="Pieology.png" />
         </Col>
-        <Col md="2">
-          <StyledImage src={RedRobin} height={170} width={170} />
+        <Col className="text-center" xs="2">
+          <Image imgName="redrobin_web.png" />
         </Col>
-        <Col md="2">
-          <StyledImage src={Tocaya} height={170} width={170} />
+        <Col className="text-center" xs="2">
+          <Image imgName="Tocaya.png" />
         </Col>
-        <Col md="12">
-          <StyledImage src={Jack} height={170} width={170} />
+        <Col className="text-center" xs="2 ">
+          <Image imgName="jack.png" />
         </Col>
       </Row>
     </Container>
