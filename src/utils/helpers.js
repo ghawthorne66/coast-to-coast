@@ -9,6 +9,7 @@ export const getMonthName = (numb) => {
 
 export const getPath = (date, slug) => {
   const momentDate = momentTz(date).tz('America/Los_Angeles').format('L')
+  // eslint-disable-next-line no-unused-vars
   const [month, day, year] = momentDate.split('/')
 
   const path = `/blog/${year}/${getMonthName(month)}/${slug}`

@@ -17,6 +17,7 @@ const SinglePostTemplate = ({ data }) => {
   } = post
 
   const {
+    // eslint-disable-next-line no-unused-vars
     meta, title, date, featuredImage, author,
   } = frontmatter
 
@@ -29,8 +30,10 @@ const SinglePostTemplate = ({ data }) => {
   const prevDate = _get(thisEdge, 'previous.frontmatter.date')
 
   const nextPostURL = getPath(nextDate, nextSlug)
-  // const previousPath = generateSlug('/blog', _get(thisEdge, 'next.frontmatter.date'), _get(thisEdge, 'next.fields.slug'))
-  // console.log('PRVIOUS PATH: ', previousPath)
+  // const previousPath = generateSlug('/blog',
+  //   _get(thisEdge, 'next.frontmatter.date'),
+  //   _get(thisEdge, 'next.fields.slug'))
+  // // console.log('PRVIOUS PATH: ', previousPath)
 
   const prevPostURL = getPath(prevDate, prevSlug)
 
