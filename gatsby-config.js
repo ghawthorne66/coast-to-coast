@@ -5,12 +5,49 @@ module.exports = {
     author: '@gatsbyjs',
   },
   plugins: [
+    // Images
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/static/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/posts`,
+        name: 'posts',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-slug-field',
+      options: {
+        filter: { internal: { type: 'MarkdownRemark' } },
+        source: (node) => `${node.frontmatter.title}`,
       },
     },
     'gatsby-transformer-sharp',
