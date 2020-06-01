@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 
-const SimpleMap = (props) => {
+const SimpleMap = () => {
   const data = useStaticQuery(graphql`
   query StaticMapQuery {
     staticMap {

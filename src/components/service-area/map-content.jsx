@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import SimpleMap from './map'
 
 const StyledMapContent = styled.section`
-  padding: 5%;  
+  padding: 3%;  
 
   & h2{
     font-family: 'Asap';
@@ -21,12 +21,11 @@ const StyledMapContent = styled.section`
     color: ${({ theme }) => theme.colors.grey};
   }
 `
-
 const MapContent = () => (
   <StyledMapContent>
     <Container>
       <Row>
-        <Col>
+        <Col md="6">
           <p>
             At Coast 2 Coast Refrigeration,
             we pride ourselves in being one of the few refrigeration
@@ -36,12 +35,12 @@ const MapContent = () => (
             refrigeration solution!
           </p>
         </Col>
-        <Col>
+        <Col md="6">
           <SimpleMap />
         </Col>
       </Row>
       <Row>
-        <Col className="my-5">
+        <Col className="pt-5">
           <h2>
             Coast 2 Coast is the best refrigeration repair in San Diego
           </h2>
