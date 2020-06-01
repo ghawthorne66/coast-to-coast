@@ -1,8 +1,9 @@
 import React from 'react'
+import PageHaeder from '../common/page-header'
 
 const ServiceArea = () => (
   <>
-    <h3>Services Area Page</h3>
+    <PageHaeder title="Coast 2 Coast Service Area" />
   </>
 )
 export default ServiceArea
