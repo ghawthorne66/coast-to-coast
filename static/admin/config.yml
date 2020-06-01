@@ -1,0 +1,84 @@
+# See https://github.com/netlify/netlify-cms/blob/master/example/config.yml
+backend:
+  name: github
+  branch: dev # Branch to update (optional; defaults to master)
+  repo: alipetarian/coast-to-coast
+  #auth_type: implicit # Required for implicit grant
+  #app_id: 90 # Application ID from your GitLab settings
+
+media_folder: 'static/images/uploads'
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+     preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: 'Status',
+          name: 'status',
+          widget: 'select',
+          options: ['Published', 'Featured', 'Draft'],
+          default: 'Published'
+        }
+      - { Label: Author , name: "author",  widget: string, default: Admin }
+      - { Label: Featured , name: "featured",  widget: boolean, default: false }
+      - { label: Excerpt, name: excerpt, widget: text }
+       
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'list'
+        required: false
+        fields: 
+          - label: 'Category'
+            name: 'category'
+            widget: 'relation' 
+            collection: 'postCategories' 
+            searchFields: ['title']
+            valueField: 'title'
+            
+        
+      - {
+          label: Featured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+#POST CATEGORIES
+  - name: postCategories
+    label: Post Category
+    editor:
+      preview: false
+    folder: content/postCategories
+    slug: '{{slug}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Featured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
+        
+  # Pages 
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    editor:
+     preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { lable: "Path", name: "path", widget: "string"}
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Header Bg", name: "header_bg", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      
