@@ -26,9 +26,9 @@ const ThankYou = () => (
           </p>
 
           <p className="lead">
-            <a className="btn btn-primary btn-sm" href="https://morosoft.org" role="button">
+            <Link className="btn btn-primary btn-sm" to="/">
               Learn More
-            </a>
+            </Link>
           </p>
         </Col>
       </Row>
