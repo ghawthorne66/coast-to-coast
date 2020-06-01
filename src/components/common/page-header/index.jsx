@@ -1,14 +1,14 @@
 import React from 'react'
 import {
-  Container,
+  Container, Row, Col,
 } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const StyledPageHeader = styled.section`
   background: ${({ theme }) => theme.colors.primary};
-  height:250px;
+  height: 250px;
   align-items: center;
-  display:flex;
+  display: flex;
   
 
   & h2{
@@ -24,7 +24,11 @@ const StyledPageHeader = styled.section`
 const PageHeader = ({ title }) => (
   <StyledPageHeader>
     <Container>
-      <h2>{title}</h2>
+      <Row>
+        <Col>
+          <h2>{title}</h2>
+        </Col>
+      </Row>
     </Container>
   </StyledPageHeader>
 )

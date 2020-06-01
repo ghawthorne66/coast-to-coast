@@ -34,6 +34,8 @@ const theme = {
     dark: '#000000',
     light: '#ffffff',
     lightGray: '#f6f6f6',
+    darkBlue: '#0181C7',
+    grey: '#666666',
   },
 }
 
