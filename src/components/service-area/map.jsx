@@ -5,8 +5,8 @@ import PropTypes from 'prop-types'
 
 const SimpleMap = () => {
   const data = useStaticQuery(graphql`
-  query StaticMapQuery {
-    staticMap {
+    query StaticMapQuery {
+      staticMap {
         childFile {
           childImageSharp {
                 fluid{
@@ -15,10 +15,8 @@ const SimpleMap = () => {
             }
         }
     }
-}
-    
+}  
   `)
-
   return <Img fluid={data.staticMap.childFile.childImageSharp.fluid} />
 }
 

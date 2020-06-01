@@ -6,8 +6,6 @@ import styled from 'styled-components'
 import SimpleMap from './map'
 
 const StyledMapContent = styled.section`
-  padding: 3%;  
-
   & h2{
     font-family: 'Asap';
     color: ${({ theme }) => theme.colors.darkBlue};
@@ -15,14 +13,16 @@ const StyledMapContent = styled.section`
     text-align: left;
     font-size: 35px;
     line-height: 35px;
-    
+    @media(max-width:768px){
+      font-size: 26px;
+    }
   }
   & p{
-    color: ${({ theme }) => theme.colors.grey};
+    color: ${({ theme }) => theme.colors.gray};
   }
 `
 const MapContent = () => (
-  <StyledMapContent>
+  <StyledMapContent className="p-3 p-sm-5">
     <Container>
       <Row>
         <Col md="6">

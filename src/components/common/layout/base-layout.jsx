@@ -35,7 +35,7 @@ const theme = {
     light: '#ffffff',
     lightGray: '#f6f6f6',
     darkBlue: '#0181C7',
-    grey: '#666666',
+    gray: '#666666',
   },
 }
 

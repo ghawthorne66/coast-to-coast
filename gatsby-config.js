@@ -32,7 +32,7 @@ module.exports = {
       options: {
         key: 'AIzaSyCixT0iG2HZkTOLWBd2EKAWEpFK27dn8P0',
         center: '32.774799,-117.071869',
-        size: '600x300',
+        size: '600x250',
 
       },
     },
