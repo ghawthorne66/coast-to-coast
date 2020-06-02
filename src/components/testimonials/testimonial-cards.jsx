@@ -19,6 +19,7 @@ const StyledCard = styled.section`
       font-size: 16px;
     }
   }
+
   & h4{
     font-size: 20px;
     line-height: 27px;
@@ -44,7 +45,6 @@ const TestimonialCards = ({ review, name }) => (
           </h4>
         </StyledCard>
       </Col>
-
     </Row>
   </Container>
 )

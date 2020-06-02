@@ -9,6 +9,7 @@ const StyledPageHeader = styled.section`
   background: ${({ theme }) => theme.colors.primary};
   align-items: center;
   display: flex;
+  
   & h2{
     font-family: 'Asap';
     color: ${({ theme }) => theme.colors.light};
