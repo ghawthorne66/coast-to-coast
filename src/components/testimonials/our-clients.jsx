@@ -29,13 +29,13 @@ const OurClients = () => (
           <Image imgName="jambajuice-web.png" />
         </Col>
         <Col className="text-center" xs="6" sm="4" md="2">
-          <Image imgName="pieology.png" />
+          <Image imgName="client-pieology.png" />
         </Col>
         <Col className="text-center" xs="6" sm="4" md="2">
           <Image imgName="redrobin-web.png" />
         </Col>
         <Col className="text-center" xs="6" sm="4" md="2">
-          <Image imgName="tocaya.png" />
+          <Image imgName="client-tocayo.png" />
         </Col>
         <Col className="text-center" xs="6" sm="4" md="2 ">
           <Image imgName="jack.png" />
