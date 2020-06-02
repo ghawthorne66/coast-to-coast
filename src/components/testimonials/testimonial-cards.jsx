@@ -3,6 +3,7 @@ import {
   Container, Row, Col,
 } from 'react-bootstrap'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const StyledCard = styled.section`
   padding: 10px;
@@ -51,5 +52,9 @@ const TestimonialCards = ({ review, name }) => (
   </Container>
 
 )
+TestimonialCards.propTypes = {
+  review: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+}
 
 export default TestimonialCards
