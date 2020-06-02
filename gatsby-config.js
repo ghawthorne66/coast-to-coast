@@ -64,6 +64,15 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-googlemaps-static',
+      options: {
+        key: 'AIzaSyCixT0iG2HZkTOLWBd2EKAWEpFK27dn8P0',
+        center: '32.774799,-117.071869',
+        size: '600x250',
+
+      },
+    },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify-cms',
     // this (optional) plugin enables Progressive Web App + Offline functionality

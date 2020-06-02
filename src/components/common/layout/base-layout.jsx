@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-
 import Overpass from '../../../fonts/Overpass-Regular.ttf'
 import Asap from '../../../fonts/Asap-Regular.ttf'
 
@@ -34,6 +33,7 @@ const theme = {
     dark: '#000000',
     light: '#ffffff',
     lightGray: '#f6f6f6',
+    gray: '#666666',
   },
 }
 

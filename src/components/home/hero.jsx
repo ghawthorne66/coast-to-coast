@@ -6,10 +6,8 @@ import {
   Col, Container, Row,
 } from 'react-bootstrap'
 import Slider from 'react-slick'
-
 import styled from 'styled-components'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-
 import BackgroundImage from 'gatsby-background-image'
 
 const StlyedHero = styled.section`
@@ -147,7 +145,6 @@ const Hero = () => {
       <Container fluid>
         <Row>
           <Col className="p-0">
-
             <Slider {...sliderSettings}>
               <BackgroundImage
                 Tag="div"
@@ -156,7 +153,12 @@ const Hero = () => {
               >
                 <div className="slide-content">
                   <h2>COVID-19 Update:  Coast 2 Coast is open! </h2>
-                  <p>We are available to provide emergency refrigeration repair and maintenance to supermarkets, restaurants, and other locations during the stay-in-place order.</p>
+                  <p>
+                    We are available to provide emergency
+                    refrigeration repair and maintenance to supermarkets,
+                    restaurants, and other locations during
+                    the stay-in-place order.
+                  </p>
                   <Link to="/contact"> CONTACT US TODAY </Link>
                 </div>
               </BackgroundImage>
@@ -167,9 +169,13 @@ const Hero = () => {
               >
                 <div className="slide-content">
                   <h2>Commercial Refrigeration Services</h2>
-                  <p>Restaurants, grocery stores, pharamacies, and warehouses need to protect their products with reliable refrigeration systems.</p>
-                  <Link to="/services/residential-refrigeration"> LEARN MORE </Link>
+                  <p>
+                    Restaurants, grocery stores, pharamacies,
+                    and warehouses need to protect their products with
+                    reliable refrigeration systems.
 
+                  </p>
+                  <Link to="/services/residential-refrigeration"> LEARN MORE </Link>
                 </div>
               </BackgroundImage>
               <BackgroundImage
@@ -178,9 +184,12 @@ const Hero = () => {
               >
                 <div className="slide-content">
                   <h2>Residential Refrigeration Services</h2>
-                  <p>Home refrigeration is important for your everyday life, let us help you with installations, maintenance, and repairs.</p>
+                  <p>
+                    Home refrigeration is important for
+                    your everyday life, let us help you with
+                    installations, maintenance, and repairs.
+                  </p>
                   <Link to="/services/commercial-refrigeration"> LEARN MORE </Link>
-
                 </div>
               </BackgroundImage>
               <BackgroundImage
@@ -189,7 +198,12 @@ const Hero = () => {
               >
                 <div className="slide-content">
                   <h2>Marine Refrigeration Services</h2>
-                  <p>We understand that at the end of the day you’ll want a cold one and some food to go with it, so let’s keep your vessel’s refrigeration in top shape!</p>
+                  <p>
+                    We understand that at the end of the
+                    day you’ll want a cold one and some food
+                    to go with it, so let’s keep your vessel’s
+                    refrigeration in top shape!
+                  </p>
                   <Link to="/services/marine-refrigeration"> LEARN MORE </Link>
                 </div>
               </BackgroundImage>
