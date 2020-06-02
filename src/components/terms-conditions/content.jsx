@@ -12,7 +12,7 @@ const StyledTermsConditionsContent = styled.section`
     line-height: 48px;
 
     @media (max-width: 768px) {
-      font-size: 26px;
+      font-size: 35px;
     }
   }
 
@@ -25,14 +25,14 @@ const StyledTermsConditionsContent = styled.section`
     text-decoration: underline;
 
     @media (max-width: 768px) {
-      font-size: 26px;
+      font-size: 28px;
     }
   }
 
   & p {
     color: ${({ theme }) => theme.colors.gray};
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
   }
 `
@@ -143,9 +143,9 @@ const Content = () => (
             <br />
             <br />
             For any other information email
-            <Link className="px-1" to="/">
+            <a className="px-1" href="mailto:info@coast2coastrefrigeration.com">
               info@coast2coastrefrigeration.com
-            </Link>
+            </a>
           </p>
         </Col>
       </Row>

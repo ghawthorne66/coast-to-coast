@@ -12,7 +12,7 @@ const StyledPrivacyPolicyContent = styled.section`
     line-height: 48px;
 
     @media (max-width: 768px) {
-      font-size: 26px;
+      font-size: 35px;
     }
   }
 
@@ -24,14 +24,14 @@ const StyledPrivacyPolicyContent = styled.section`
     line-height: 35px;
 
     @media (max-width: 768px) {
-      font-size: 26px;
+      font-size: 28px;
     }
   }
 
   & p {
     color: ${({ theme }) => theme.colors.gray};
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
   }
 
