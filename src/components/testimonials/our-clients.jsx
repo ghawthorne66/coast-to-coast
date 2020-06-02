@@ -26,7 +26,7 @@ const OurClients = () => (
           <Image imgName="aldi.png" />
         </Col>
         <Col className="text-center" xs="6" sm="4" md="2">
-          <Image imgName="jambajuice_web.png" />
+          <Image imgName="jambajuice-web.png" />
         </Col>
         <Col className="text-center" xs="6" sm="4" md="2">
           <Image imgName="pieology.png" />

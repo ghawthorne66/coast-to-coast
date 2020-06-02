@@ -17,6 +17,7 @@ const StyledMapContent = styled.section`
       font-size: 26px;
     }
   }
+  
   & p{
     color: ${({ theme }) => theme.colors.gray};
   }
