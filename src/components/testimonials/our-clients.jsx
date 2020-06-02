@@ -22,22 +22,22 @@ const OurClients = () => (
             OUR CLIENTS
           </h1>
         </Col>
-        <Col className="text-center" xs="3" md="2">
+        <Col className="text-center" xs="6" sm="4" md="2">
           <Image imgName="aldi.png" />
         </Col>
-        <Col className="text-center" xs="3" md="2">
+        <Col className="text-center" xs="6" sm="4" md="2">
           <Image imgName="jambajuice_web.png" />
         </Col>
-        <Col className="text-center" xs="3" md="2">
-          <Image imgName="Pieology.png" />
+        <Col className="text-center" xs="6" sm="4" md="2">
+          <Image imgName="pieology.png" />
         </Col>
-        <Col className="text-center" xs="3" md="2">
-          <Image imgName="redrobin_web.png" />
+        <Col className="text-center" xs="6" sm="4" md="2">
+          <Image imgName="redrobin-web.png" />
         </Col>
-        <Col className="text-center mt-4 mt-md-0" xs="3" md="2">
-          <Image imgName="Tocaya.png" />
+        <Col className="text-center" xs="6" sm="4" md="2">
+          <Image imgName="tocaya.png" />
         </Col>
-        <Col className="text-center mt-4 mt-md-0" xs="3" md="2 ">
+        <Col className="text-center" xs="6" sm="4" md="2 ">
           <Image imgName="jack.png" />
         </Col>
       </Row>

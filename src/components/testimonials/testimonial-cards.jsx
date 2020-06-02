@@ -30,28 +30,25 @@ const StyledCard = styled.section`
       font-size: 18px;
     }
   }
-
 `
 const TestimonialCards = ({ review, name }) => (
   <Container className="mt-5">
     <Row>
       <Col xs="12">
         <StyledCard className="p-4">
-
           <p>
             {review}
           </p>
           <h4 className="text-right">
             {name}
           </h4>
-
         </StyledCard>
       </Col>
 
     </Row>
   </Container>
-
 )
+
 TestimonialCards.propTypes = {
   review: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
