@@ -8,7 +8,7 @@ import SimpleMap from './map'
 const StyledMapContent = styled.section`
   & h2{
     font-family: 'Asap';
-    color: ${({ theme }) => theme.colors.darkBlue};
+    color: ${({ theme }) => theme.colors.primary};
     font-weight: 700;
     text-align: left;
     font-size: 35px;
