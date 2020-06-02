@@ -1,9 +1,6 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
-// import config from '../common/config.json'
-// import http from "../../services/httpService"
-// import Phone from "../common/phoneInput"
 
 const ContactSchema = Yup.object().shape({
   name: Yup.string()
