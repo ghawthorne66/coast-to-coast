@@ -3,6 +3,7 @@ import {
   Container, Row, Col,
 } from 'react-bootstrap'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const StyledPageHeader = styled.section`
   background: ${({ theme }) => theme.colors.primary};
@@ -19,9 +20,8 @@ const StyledPageHeader = styled.section`
     }
   }
 `
-// eslint-disable-next-line react/prop-types
 const PageHeader = ({ title }) => (
-  <StyledPageHeader className="p-3 py-md-5">
+  <StyledPageHeader className="p-3 p-md-5">
     <Container>
       <Row>
         <Col>
@@ -31,4 +31,9 @@ const PageHeader = ({ title }) => (
     </Container>
   </StyledPageHeader>
 )
+
+PageHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+}
+
 export default PageHeader
