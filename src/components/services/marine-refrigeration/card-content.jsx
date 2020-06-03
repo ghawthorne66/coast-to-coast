@@ -69,7 +69,8 @@ const CardContent = () => (
             We send professionals who employ the best repair techniques
           </li>
           <li>
-            When replacements are required, we use the highest quality products for your refrigeration system
+            When replacements are required, we use the highest quality products
+            for your refrigeration system
           </li>
         </ul>
         We cannot live with the image of you sailing with a broken refrigeration box
