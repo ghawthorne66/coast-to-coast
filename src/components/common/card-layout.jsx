@@ -54,10 +54,12 @@ const CardLayout = ({ children, title, image }) => (
     </StyledCardLayout>
   </Container>
 )
+
 CardLayout.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 }
+
 export default CardLayout
 

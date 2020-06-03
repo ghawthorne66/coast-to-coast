@@ -51,7 +51,6 @@ const CardContent = () => (
         operational costs
       </p>
     </CardLayout>
-
     <CardLayout title="Maintenance and Repair" image="commercial-3.jpg">
       <p>
         We are here to relieve you from stress caused by any refrigeration system
@@ -62,7 +61,8 @@ const CardContent = () => (
         <br />
         <br />
         If you experience a refrigeration breakdown, call us immediately! We will
-        find fast solutions, to protect the products kept in the broken refrigeration
+        find fast solutions, to protect the products kept in the
+        broken refrigeration
         systems, and reduce your stress and any business risks.
         <br />
         <br />

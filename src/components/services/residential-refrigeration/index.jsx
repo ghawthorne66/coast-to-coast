@@ -10,7 +10,7 @@ const ResidentialRefrigeration = () => (
     <CardContent />
     <Container>
       <Row className="mt-5">
-        <Col>
+        <Col lg={{ span: 8, offset: 2 }}>
           <ContactForm />
         </Col>
       </Row>

@@ -8,4 +8,5 @@ const Careers = () => (
     <Content />
   </>
 )
+
 export default Careers

@@ -6,43 +6,44 @@ import styled from 'styled-components'
 import ContactForm from '../common/contact-form'
 
 const StyledContent = styled.section`
-& h1 {
-  font-family: "Asap";
-  color: ${({ theme }) => theme.colors.primary};
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 48px;
+    & h1 {
+      font-family: "Asap";
+      color: ${({ theme }) => theme.colors.primary};
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 48px;
 
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-}
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
 
-& h3 {
-  font-family: "Asap";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 35px;
+    & h3 {
+      font-family: "Asap";
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 35px;
 
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-}
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
 
-& p{
-  font-size: 14px;
-  line-height: 27px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.colors.gray};
+    & p{
+      font-size: 14px;
+      line-height: 27px;
+      font-weight: 500;
+      color: ${({ theme }) => theme.colors.gray};
 
-  @media(max-width:768px){
-    font-size: 14px;
-  }
-}
+      @media(max-width:768px){
+        font-size: 14px;
+      }
+    }
 
-& a{
-  text-decoration:none;
-}
+    & a{
+      text-decoration:none;
+      color: ${({ theme }) => theme.colors.primaryx};
+    }
 `
 const Content = () => (
   <Container>
@@ -65,10 +66,8 @@ const Content = () => (
               </a>
             </Col>
           </Row>
-
           <Row>
             <i className="fa fa-envelope fa-5x" />
-
             <Col>
               <h1>
                 Email Coast 2 Coast
@@ -78,7 +77,6 @@ const Content = () => (
                   info@coast2coastrefrigeration.com
                 </h3>
               </a>
-
             </Col>
           </Row>
           <h1>

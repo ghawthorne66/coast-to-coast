@@ -7,15 +7,15 @@ import ContactForm from '../common/contact-form'
 import Image from '../common/image'
 
 const StyledContent = styled.section`
-& p{
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 500;
+    & p{
+      font-size: 16px;
+      line-height: 27px;
+      font-weight: 500;
 
-  @media(max-width:768px){
-    font-size: 16px;
-  }
-}
+      @media(max-width:768px){
+        font-size: 16px;
+      }
+    }
 `
 const Content = () => (
   <Container>
