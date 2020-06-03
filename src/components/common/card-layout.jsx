@@ -21,20 +21,25 @@ const StyledCardLayout = styled.section`
   & p {
     color: ${({ theme }) => theme.colors.gray};
     font-weight: 500;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     margin-top: 20px;
-  }
 
-  & ul {
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
   }
 
   & li {
     color: ${({ theme }) => theme.colors.gray};
     font-weight: 500;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     padding-top: 5px;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
   }
 `
 const CardLayout = ({ children, title, image }) => (
