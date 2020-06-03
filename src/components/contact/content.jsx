@@ -10,7 +10,7 @@ const StyledContent = styled.section`
       font-family: "Asap";
       color: ${({ theme }) => theme.colors.primary};
       font-weight: 700;
-      font-size: 22px;
+      font-size: 20px;
       line-height: 48px;
 
       @media (max-width: 768px) {
@@ -21,7 +21,7 @@ const StyledContent = styled.section`
     & h3 {
       font-family: "Asap";
       font-weight: 700;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 35px;
 
       @media (max-width: 768px) {
