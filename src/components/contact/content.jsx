@@ -51,23 +51,36 @@ const Content = () => (
         <Col lg="7">
           <ContactForm />
         </Col>
-        <Col className="mt-4 mt-lg-0" lg="5">
-          <h1>
-            Call Coast 2 Coast
-          </h1>
-          <a href="tel:3213513869">
-            <h3>
-              (919) 799-0276
-            </h3>
-          </a>
-          <h1>
-            Email Coast 2 Coast
-          </h1>
-          <a href="mailto:info@coast2coastrefrigeration.com">
-            <h3>
-              info@coast2coastrefrigeration.com
-            </h3>
-          </a>
+        <Col className="mt-4 mt-lg-0 px-5" lg="5">
+          <Row>
+            <i className="fa fa-mobile fa-5x" />
+            <Col>
+              <h1>
+                Call Coast 2 Coast
+              </h1>
+              <a href="tel:3213513869">
+                <h3>
+                  (919) 799-0276
+                </h3>
+              </a>
+            </Col>
+          </Row>
+
+          <Row>
+            <i className="fa fa-envelope fa-5x" />
+
+            <Col>
+              <h1>
+                Email Coast 2 Coast
+              </h1>
+              <a href="mailto:info@coast2coastrefrigeration.com">
+                <h3>
+                  info@coast2coastrefrigeration.com
+                </h3>
+              </a>
+
+            </Col>
+          </Row>
           <h1>
             Hours
           </h1>
