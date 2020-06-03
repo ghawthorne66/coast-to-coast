@@ -14,7 +14,7 @@ import PropTypes from 'prop-types'
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = ({ imgName, ...props }) => {
+const Image = ({ imgName, isShadow, ...props }) => {
   const data = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -37,7 +37,7 @@ const Image = ({ imgName, ...props }) => {
   if (!image) {
     return null
   }
-  return <Img fluid={image.node.fluid} {...props} />
+  return <Img className={isShadow && 'shadow-lg rounded'} fluid={image.node.fluid} {...props} />
 
   // return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }

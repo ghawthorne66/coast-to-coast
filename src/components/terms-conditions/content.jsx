@@ -140,9 +140,10 @@ const Content = () => (
             provision(s) shall be constructed in a manner to closely reflect, as
             much as possible, the intentions of the parties, with the other
             provisions remaining in full force and effect.
+
             <br />
             <br />
-            For any other information email
+            For any other email
             <a className="px-1" href="mailto:info@coast2coastrefrigeration.com">
               info@coast2coastrefrigeration.com
             </a>
