@@ -84,9 +84,15 @@ const Sidebar = () => (
       </a>
       <Row>
         <Col>
-          <i className="fa fa-facebook fa-2x " />
-          <i className="fa fa-twitter fa-2x pl-3" />
-          <i className="fa fa-instagram fa-2x pl-3" />
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/coast2coastrefrigeration/">
+            <i className="fa fa-facebook fa-2x " />
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/coast2coastinsd">
+            <i className="fa fa-twitter fa-2x pl-3" />
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/coast_2_coast_refrigeration/">
+            <i className="fa fa-instagram fa-2x pl-3" />
+          </a>
         </Col>
       </Row>
       <H1 className="mt-5">

@@ -98,7 +98,12 @@ const WhoWeAre = () => (
               </div>
               <div className="content">
                 <h4>Commercial Refigeration</h4>
-                <p>If you own a restaurant, grocery store, cafeteria, pub or maybe you manage a pharmacy or run a warehouse, we are here to protect your investment made in all those products you sell. So far, we can honestly declare we installed all types of equipment:</p>
+                <p>
+                  If you own a restaurant, grocery store, cafeteria,
+                  pub or maybe you manage a pharmacy or run a warehouse, we are here
+                  to protect your investment made in all those products you sell.
+                  So far, we can honestly declare we installed all types of equipment:
+                </p>
                 <ul>
                   <li>small-systems,</li>
                   <li>multiplex systems,</li>
@@ -119,7 +124,11 @@ const WhoWeAre = () => (
               </div>
               <div className="content">
                 <h4>Marine Refigeration</h4>
-                <p>Adding a refrigeration on your vessel is not like going to a store, buy one and connect it to a source of power. You need to consider at least the following factors:</p>
+                <p>
+                  Adding a refrigeration on your vessel is not like going to a store,
+                  buy one and connect it to a source of power. You need to consider at
+                  least the following factors:
+                </p>
                 <ul>
                   <li>What type of power you have and how much battery the system will need,</li>
                   <li>What space you have on the boat,</li>
