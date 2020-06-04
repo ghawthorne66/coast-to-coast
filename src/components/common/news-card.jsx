@@ -63,4 +63,5 @@ NewsCard.propTypes = {
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 }
+
 export default NewsCard

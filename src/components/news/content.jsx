@@ -118,4 +118,5 @@ const Content = () => (
     </Row>
   </Container>
 )
+
 export default Content

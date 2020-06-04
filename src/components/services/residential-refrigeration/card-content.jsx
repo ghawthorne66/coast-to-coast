@@ -85,4 +85,5 @@ const CardContent = () => (
     </CardLayout>
   </>
 )
+
 export default CardContent
