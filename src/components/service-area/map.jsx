@@ -1,7 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import PropTypes from 'prop-types'
 
 const SimpleMap = () => {
   const data = useStaticQuery(graphql`
@@ -15,13 +14,10 @@ const SimpleMap = () => {
             }
         }
     }
-}  
-  `)
-  return <Img fluid={data.staticMap.childFile.childImageSharp.fluid} />
-}
+  }  
+`)
 
-Image.propTypes = {
-  imgName: PropTypes.string.isRequired,
+  return <Img fluid={data.staticMap.childFile.childImageSharp.fluid} />
 }
 
 export default SimpleMap

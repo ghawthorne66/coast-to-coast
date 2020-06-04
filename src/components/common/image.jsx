@@ -37,13 +37,19 @@ const Image = ({ imgName, isShadow, ...props }) => {
   if (!image) {
     return null
   }
+  // eslint-disable-next-line react/jsx-props-no-spreading
   return <Img className={isShadow && 'shadow-lg rounded'} fluid={image.node.fluid} {...props} />
 
   // return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
+Image.defaultProps = {
+  isShadow: '',
+}
+
 Image.propTypes = {
   imgName: PropTypes.string.isRequired,
+  isShadow: PropTypes.string,
 }
 
 export default Image
