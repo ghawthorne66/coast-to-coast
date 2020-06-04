@@ -1,7 +1,5 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
 import NewsCard from '../common/news-card'
 import Sidebar from '../common/sidebar'
 

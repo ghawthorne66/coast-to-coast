@@ -1,11 +1,10 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Image from './image'
 
 const StyledNewsCard = styled.section`
+  
   & h1 {
     font-family: "Asap";
     color: ${({ theme }) => theme.colors.primary};
@@ -55,9 +54,9 @@ const NewsCard = ({
     <p>
       {description}
     </p>
-
   </StyledNewsCard>
 )
+
 NewsCard.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
