@@ -21,7 +21,7 @@ const StyledContent = styled.section`
     & h3 {
       font-family: "Asap";
       font-weight: 700;
-      font-size: 18px;
+      font-size: 17px;
       line-height: 35px;
 
       @media (max-width: 768px) {
@@ -29,7 +29,7 @@ const StyledContent = styled.section`
       }
     }
 
-    & p{
+    & p {
       font-size: 18px;
       line-height: 27px;
       font-weight: 500;
@@ -40,10 +40,18 @@ const StyledContent = styled.section`
       }
     }
 
-    & a{
+    & a {
       text-decoration:none;
-      color: ${({ theme }) => theme.colors.primaryx};
+      color: ${({ theme }) => theme.colors.primary};
     }
+
+    & i {
+      color: ${({ theme }) => theme.colors.primary};
+    }
+`
+const StyledDiv = styled.div`
+    width: 95px;
+
 `
 const Content = () => (
   <Container>
@@ -53,9 +61,13 @@ const Content = () => (
           <ContactForm />
         </Col>
         <Col className="mt-4 mt-lg-0 px-5" lg="5">
-          <Row>
-            <i className="fa fa-mobile fa-5x" />
-            <Col>
+          <Row className="d-flex">
+            <StyledDiv>
+              <Col className="text-center">
+                <i className="fa fa-mobile fa-5x" />
+              </Col>
+            </StyledDiv>
+            <Col className="">
               <h1>
                 Call Coast 2 Coast
               </h1>
@@ -66,8 +78,12 @@ const Content = () => (
               </a>
             </Col>
           </Row>
-          <Row>
-            <i className="fa fa-envelope fa-5x" />
+          <Row className="mt-3">
+            <StyledDiv>
+              <Col>
+                <i className="fa fa-envelope fa-5x" />
+              </Col>
+            </StyledDiv>
             <Col>
               <h1>
                 Email Coast 2 Coast
@@ -79,7 +95,7 @@ const Content = () => (
               </a>
             </Col>
           </Row>
-          <h1>
+          <h1 className="mt-4">
             Hours
           </h1>
           <p>

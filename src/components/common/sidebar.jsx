@@ -1,10 +1,46 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import {
+  Row, Col, Button,
+} from 'react-bootstrap'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 
 const StyledNewsCard = styled.section`
+
+  & i{
+    color: ${({ theme }) => theme.colors.gray};
+  }
+
+  & ul{
+      padding: 0;
+      list-style: none;
+  }
+
+  & a{
+    color: ${({ theme }) => theme.colors.gray};
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  
+    @media (max-width: 768px) {
+        font-size: 15px;
+      }
+  }
+
+  & a:hover{
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  & button {
+    background-color: ${({ theme }) => theme.colors.lightGray};
+    color: ${({ theme }) => theme.colors.gray};
+    border: none;
+  }
+
+  & button: hover {
+    background-color: ${({ theme }) => theme.colors.gray};
+  }
 
 `
 const H1 = styled.h1`
@@ -28,6 +64,7 @@ const P = styled.p`
       font-size: 15px;
     }
 `
+
 const Sidebar = () => (
   <StyledNewsCard>
 
@@ -45,9 +82,68 @@ const Sidebar = () => (
           (919) 799-0276
         </P>
       </a>
-      <H1>
+      <Row>
+        <Col>
+          <i className="fa fa-facebook fa-2x " />
+          <i className="fa fa-twitter fa-2x pl-3" />
+          <i className="fa fa-instagram fa-2x pl-3" />
+        </Col>
+      </Row>
+      <H1 className="mt-5">
         Recent Posts
       </H1>
+      <ul className="mt-3">
+        <li>
+          <Link to="/">
+            Optimize your AC before summer starts
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            Commercial Refrigeration Repair Frequently Asked Questions
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            Excited to work with another Jack In The Box restaurant in San Diego
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            How can AC maintenance save you money
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            Coast 2 Coast Refrigeration is Open
+          </Link>
+        </li>
+      </ul>
+      <H1 className="mt-5">
+        Tags
+      </H1>
+      <Row>
+        <Col className="pt-2" xs="12">
+          <Button className="px-2 py-1">best refrigeration repair</Button>
+          <Button className="px-2 py-1 ml-2">boat refrigeration</Button>
+        </Col>
+        <Col className="pt-2" xs="12">
+          <Button className="px-2 py-1">bussiness refrigeration</Button>
+          <Button className="px-2 py-1 ml-2">commercial refrigeration</Button>
+        </Col>
+        <Col className="pt-2" xs="12">
+          <Button className="px-2 py-1">emergency refrigeration repair</Button>
+          <Button className="px-2 py-1 mt-2">grocery store refrigeration repair</Button>
+        </Col>
+        <Col className="pt-2" xs="12">
+          <Button className="px-2 py-1">refrigeration repair</Button>
+          <Button className="px-2 py-1 ml-2">resultant refrigeration</Button>
+        </Col>
+        <Col className="pt-2" xs="12">
+          <Button className="px-2 py-1">restaurant refrigeration</Button>
+          <Button className="px-2 py-1 ml-2">san diego refrigeration</Button>
+        </Col>
+      </Row>
     </Col>
   </StyledNewsCard>
 )

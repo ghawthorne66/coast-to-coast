@@ -30,11 +30,9 @@ const StyledWhoWeAre = styled.section`
 
   & a:hover{
     text-decoration: none;
-
   }
 
   & .service-cont .inner{
-
     display: flex;
     flex-direction: column;
     background: #fff;
