@@ -16,7 +16,11 @@ const FormContainer = styled.div`
       color: ${({ theme }) => theme.colors.primary} !important;
       font-weight: bold;
       font-size: 36px;
-      text-align: left !important;;
+      text-align: left !important;
+
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
     }
 `
 

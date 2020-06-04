@@ -6,12 +6,13 @@ import styled from 'styled-components'
 import Image from '../common/image'
 
 const StyledOurClients = styled.section`
-& h1{
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 700;
-}
+
+    & h1{
+      color: ${({ theme }) => theme.colors.primary};
+      font-size: 35px;
+      line-height: 35px;
+      font-weight: 700;
+    }
 `
 const OurClients = () => (
   <StyledOurClients className="p-3 p-md-5">
@@ -44,4 +45,5 @@ const OurClients = () => (
     </Container>
   </StyledOurClients>
 )
+
 export default OurClients

@@ -2,11 +2,10 @@ import React from 'react'
 import PageHeader from '../common/page-header'
 import Content from './content'
 
-const Careers = () => (
+const Contact = () => (
   <>
-    <PageHeader title="Careers at Coast 2 Coast Refrigeration" />
+    <PageHeader title="Contact Coast 2 Coast" />
     <Content />
   </>
 )
-
-export default Careers
+export default Contact
