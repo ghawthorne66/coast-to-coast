@@ -4,6 +4,7 @@ import {
 } from 'react-bootstrap'
 import styled from 'styled-components'
 import ContactForm from '../common/contact-form'
+import Image from '../common/image'
 
 const StyledContent = styled.section`
     & h1 {
@@ -51,7 +52,6 @@ const StyledContent = styled.section`
 `
 const StyledDiv = styled.div`
     width: 95px;
-
 `
 const Content = () => (
   <Container>
@@ -63,11 +63,11 @@ const Content = () => (
         <Col className="mt-4 mt-lg-0 px-5" lg="5">
           <Row className="d-flex">
             <StyledDiv>
-              <Col className="text-center">
-                <i className="fa fa-mobile fa-5x" />
+              <Col className="text-center pt-3">
+                <Image imgName="smartphone.png" />
               </Col>
             </StyledDiv>
-            <Col className="">
+            <Col xs="6" lg="12" xl="6">
               <h1>
                 Call Coast 2 Coast
               </h1>
@@ -80,8 +80,8 @@ const Content = () => (
           </Row>
           <Row className="mt-3">
             <StyledDiv>
-              <Col>
-                <i className="fa fa-envelope fa-5x" />
+              <Col className="text-center pt-3">
+                <Image imgName="email.png" />
               </Col>
             </StyledDiv>
             <Col>
