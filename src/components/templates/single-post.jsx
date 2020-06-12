@@ -52,10 +52,8 @@ const SinglePostTemplate = ({ data }) => {
           itemType="https://schema.org/BlogPosting"
         >
           <div className="container skinny">
-
             <div className="SinglePost--Content relative">
               <div className="SinglePost--Meta">
-
                 {categories && (
                 <>
                   <span>|</span>
@@ -72,13 +70,11 @@ const SinglePostTemplate = ({ data }) => {
                 </>
                 )}
               </div>
-
               {title && (
               <h1 className="SinglePost--Title" itemProp="title">
                 {title}
               </h1>
               )}
-
               <div className="SinglePost--InnerContent">
                 <Content source={html} />
               </div>
