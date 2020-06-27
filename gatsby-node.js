@@ -74,7 +74,8 @@ exports.createPages = async ({ actions, graphql, reporter, getNode }) => {
   
     yearsArr.push(year) // Building the years arrary
     // const path = `/blog/${year}/${month}/${day}/${fields.slug}`
-    const path = `/blog/${year}/${months[month-1]}/${fields.slug}`
+    // const path = `/blog/${year}/${months[month-1]}/${fields.slug}`
+    const path = `/news/${fields.slug}`
 
     createPage({
       path: path,

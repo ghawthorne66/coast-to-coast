@@ -1,13 +1,12 @@
 import React from 'react'
-
 import { graphql } from 'gatsby'
-
 import SinglePostTemplate from '../components/templates/single-post'
 
 const SinglePost = ({ data }) => (
   <SinglePostTemplate
     data={data}
   />
+
 )
 
 export default SinglePost
@@ -50,7 +49,7 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          frontmatter {
+        frontmatter {
             title
           }
         }

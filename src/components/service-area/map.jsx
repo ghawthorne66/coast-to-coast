@@ -16,7 +16,6 @@ const SimpleMap = () => {
     }
   }  
 `)
-
   return <Img fluid={data.staticMap.childFile.childImageSharp.fluid} />
 }
 

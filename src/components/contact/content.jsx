@@ -52,7 +52,6 @@ const StyledContent = styled.section`
 `
 const StyledDiv = styled.div`
   width: 95px;
-
 `
 const Content = () => (
   <Container>
@@ -64,10 +63,8 @@ const Content = () => (
         <Col className="mt-4 mt-lg-0 px-5" lg="5">
           <Row className="d-flex">
             <StyledDiv>
-
               <Col className="text-center pt-3">
                 <Image imgName="smartphone.png" />
-
               </Col>
             </StyledDiv>
             <Col xs="6" lg="12" xl="6">
