@@ -4,53 +4,54 @@ import {
 } from 'react-bootstrap'
 import styled from 'styled-components'
 import ContactForm from '../common/contact-form'
+import Image from '../common/image'
 
 const StyledContent = styled.section`
-    & h1 {
-      font-family: "Asap";
-      color: ${({ theme }) => theme.colors.primary};
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 48px;
+  & h1 {
+    font-family: "Asap";
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
 
-      @media (max-width: 768px) {
-        font-size: 18px;
-      }
-    }
-
-    & h3 {
-      font-family: "Asap";
-      font-weight: 700;
-      font-size: 17px;
-      line-height: 35px;
-
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
-    }
-
-    & p {
+    @media (max-width: 768px) {
       font-size: 18px;
-      line-height: 27px;
-      font-weight: 500;
-      color: ${({ theme }) => theme.colors.gray};
-
-      @media(max-width:768px){
-        font-size: 14px;
-      }
     }
+  }
 
-    & a {
-      text-decoration:none;
-      color: ${({ theme }) => theme.colors.primary};
-    }
+  & h3 {
+    font-family: "Asap";
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 35px;
 
-    & i {
-      color: ${({ theme }) => theme.colors.primary};
+    @media (max-width: 768px) {
+      font-size: 16px;
     }
+  }
+
+  & p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.gray};
+
+    @media(max-width:768px){
+      font-size: 14px;
+    }
+  }
+
+  & a {
+    text-decoration:none;
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  & i {
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `
 const StyledDiv = styled.div`
-    width: 95px;
+  width: 95px;
 
 `
 const Content = () => (
@@ -63,11 +64,13 @@ const Content = () => (
         <Col className="mt-4 mt-lg-0 px-5" lg="5">
           <Row className="d-flex">
             <StyledDiv>
-              <Col className="text-center">
-                <i className="fa fa-mobile fa-5x" />
+
+              <Col className="text-center pt-3">
+                <Image imgName="smartphone.png" />
+
               </Col>
             </StyledDiv>
-            <Col className="">
+            <Col xs="6" lg="12" xl="6">
               <h1>
                 Call Coast 2 Coast
               </h1>
@@ -80,8 +83,8 @@ const Content = () => (
           </Row>
           <Row className="mt-3">
             <StyledDiv>
-              <Col>
-                <i className="fa fa-envelope fa-5x" />
+              <Col className="text-center pt-3">
+                <Image imgName="email.png" />
               </Col>
             </StyledDiv>
             <Col>
@@ -109,6 +112,6 @@ const Content = () => (
       </Row>
     </StyledContent>
   </Container>
-
 )
+
 export default Content
