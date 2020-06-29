@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import moment from 'moment'
-import NewsCard from '../common/news-card'
+import PostCard from '../common/post-card'
 import Sidebar from '../common/sidebar'
 
 const Content = () => {
@@ -35,7 +35,7 @@ const Content = () => {
           {
             edges.map(({ node: { frontmatter: { title, description, date }, fields: { slug } } }) => (
               <Link to={`/news/${slug}`}>
-                <NewsCard
+                <PostCard
                   title={title}
                   date={moment(date).format('DD-MM-YYYY')}
                   description={description}

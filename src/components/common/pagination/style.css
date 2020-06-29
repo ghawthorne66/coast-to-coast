@@ -1,0 +1,10 @@
+#blog-pagination .page-item  .page-link {
+  color: #0068A6 !important;
+}
+
+#blog-pagination .page-item.active .page-link {
+  
+  color: #ffffff !important;
+  background-color: #0068A6;
+  border-color: #0068A6;
+}

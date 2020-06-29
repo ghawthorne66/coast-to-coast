@@ -44,6 +44,20 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/postCategories`,
+        name: 'postCategories',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/postTags`,
+        name: 'postTags',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-slug-field',
       options: {
         filter: { internal: { type: 'MarkdownRemark' } },

@@ -40,8 +40,18 @@ collections:
             collection: 'postCategories' 
             searchFields: ['title']
             valueField: 'title'
-            
-        
+
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        required: false
+        fields: 
+          - label: 'Tag'
+            name: 'tag'
+            widget: 'relation' 
+            collection: 'postTags' 
+            searchFields: ['title']
+            valueField: 'title'
       - {
           label: Featured Image,
           name: featuredImage,
@@ -66,4 +76,15 @@ collections:
           widget: image,
           required: false,
         }
+
+#POST Tags
+  - name: postTags
+    label: Post Tag
+    editor:
+      preview: false
+    folder: content/postTags
+    slug: '{{slug}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: Title, name: title, widget: string }
       
